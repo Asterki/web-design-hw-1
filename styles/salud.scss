@@ -1,0 +1,69 @@
+section {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+
+    color: #333;
+    text-decoration: none;
+
+    margin-bottom: 20px;
+
+    border-radius: 20px;
+    width: 70%;
+
+    background-color: #e7f4c1;
+    box-shadow: 0 0 10px #0000003f;
+
+    .date {
+        display: inline;
+        padding: 5px;
+        background-color: #f0f0f0;
+        border-radius: 20px;
+    }
+
+    img {
+        width: 20%;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    div {
+        padding: 20px;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        section {
+            display: block;
+            flex-direction: column;
+            width: 90%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .two-items-section {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            a {
+                width: 90%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

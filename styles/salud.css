@@ -1,0 +1,44 @@
+section {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  width: 70%;
+  background-color: #e7f4c1;
+  box-shadow: 0 0 10px #0000003f; }
+  section .date {
+    display: inline;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 20px; }
+  section img {
+    width: 20%;
+    border-radius: 20px;
+    object-fit: cover; }
+  section div {
+    padding: 20px; }
+    section div h1 {
+      font-size: 30px; }
+    section div p {
+      font-size: 15px; }
+
+@media screen and (max-width: 1000px) {
+  main section {
+    display: block;
+    flex-direction: column;
+    width: 90%; }
+    main section img {
+      width: 100%; }
+  main .two-items-section {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+    main .two-items-section a {
+      width: 90%; }
+      main .two-items-section a img {
+        width: 100%; } }
+
+/*# sourceMappingURL=salud.css.map */
