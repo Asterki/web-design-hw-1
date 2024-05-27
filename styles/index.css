@@ -29,6 +29,7 @@ header {
 nav {
   padding: 10px;
   background-color: #fff4b9;
+  box-shadow: 0 0 10px #0000003f;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -36,23 +37,105 @@ nav {
     text-decoration: none;
     color: #aacf50;
     font-size: 20px;
-    border: 2px solid #fff4b9;
-    margin: 5px 10px;
+    border: 4px solid #fff4b9;
+    margin: 2px 10px;
     padding: 10px;
+    font-weight: bold;
     transition: all 0.1s ease-in-out; }
     nav a:hover {
-      border: 2px solid #aacf50; }
+      border: 4px solid #aacf50; }
 
 main {
-  padding: 20px; }
-  main section {
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  main a {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    gap: 20px;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    width: 70%;
+    background-color: #e7f4c1;
+    box-shadow: 0 0 10px #0000003f; }
+    main a img {
+      width: 20%;
+      border-radius: 20px;
+      object-fit: cover; }
+    main a div {
+      padding: 20px; }
+      main a div h1 {
+        font-size: 30px; }
+      main a div p {
+        font-size: 15px; }
+  main .two-items-section {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; }
+    main .two-items-section a {
+      gap: 5px; }
+      main .two-items-section a img {
+        width: 40%; }
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aacf50;
+  color: #fff4b9;
+  padding: 20px; }
+  footer p {
+    font-size: 20px; }
+
+@media screen and (max-width: 1000px) {
+  main a img {
+    width: 40%; } }
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column; }
+    header .title h1 {
+      font-size: 60px; }
+    header .title h2 {
+      font-size: 40px; }
+    header img {
+      transform: translateY(0%); }
+
+  .promo {
     flex-direction: column;
-    width: 30%;
-    padding: 20px;
-    background-color: white;
-    border-radius: 20px; }
+    text-align: center; }
+    .promo h1 {
+      font-size: 30px; }
+
+  nav {
+    flex-direction: column; }
+    nav a {
+      margin: 10px 0; }
+
+  main a {
+    display: block;
+    flex-direction: column;
+    width: 90%; }
+    main a img {
+      width: 100%; }
+  main .two-items-section {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+    main .two-items-section a {
+      width: 90%; }
+      main .two-items-section a img {
+        width: 100%; }
+
+  footer {
+    flex-direction: column; }
+    footer p {
+      font-size: 15px; } }
 
 /*# sourceMappingURL=index.css.map */

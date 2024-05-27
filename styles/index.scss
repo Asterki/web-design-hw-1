@@ -1,87 +1,231 @@
 header {
-  width: 100%;
+    width: 100%;
 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  background-color: #aacf50;
-  color: #fff4b9;
-
-  padding: 20px;
-
-  .title {
-    h1 {
-      font-size: 90px;
-    }
-
-    h2 {
-      margin-top: -30px;
-      font-size: 60px;
-      font-weight: bold;
-    }
-  }
-
-  img {
-    transform: translateY(20%);
-  }
-}
-
-.promo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: #fff4b9;
-  color: #aacf50;
-
-  padding: 10px;
-  gap: 20px;
-
-  h1 {
-    font-size: 40px;
-  }
-}
-
-nav {
-  padding: 10px;
-  background-color: #fff4b9;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  a {
-    text-decoration: none;
-    color: #aacf50;
-    font-size: 20px;
-
-    border: 2px solid #fff4b9;
-    margin: 5px 10px;
-    padding: 10px;
-
-    transition: all 0.1s ease-in-out;
-
-    &:hover {
-      border: 2px solid #aacf50;
-    }
-  }
-}
-
-main {
-  padding: 20px;
-
-  section {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
 
-    width: 30%;
+    background-color: #aacf50;
+    color: #fff4b9;
 
     padding: 20px;
 
-    background-color: white;
-    border-radius: 20px;
-  }
+    .title {
+        h1 {
+            font-size: 90px;
+        }
+
+        h2 {
+            margin-top: -30px;
+            font-size: 60px;
+            font-weight: bold;
+        }
+    }
+
+    img {
+        transform: translateY(20%);
+    }
+}
+
+.promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff4b9;
+    color: #aacf50;
+
+    padding: 10px;
+    gap: 20px;
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+nav {
+    padding: 10px;
+    background-color: #fff4b9;
+    box-shadow: 0 0 10px #0000003f;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: #aacf50;
+        font-size: 20px;
+
+        border: 4px solid #fff4b9;
+        margin: 2px 10px;
+        padding: 10px;
+
+        font-weight: bold;
+
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+            border: 4px solid #aacf50;
+        }
+    }
+}
+
+main {
+    margin-top: 40px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    a {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+
+        color: #333;
+        text-decoration: none;
+
+        margin-bottom: 20px;
+
+        border-radius: 20px;
+        width: 70%;
+
+        background-color: #e7f4c1;
+        box-shadow: 0 0 10px #0000003f;
+
+        img {
+            width: 20%;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        div {
+            padding: 20px;
+
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .two-items-section {
+        width: 70%;
+
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+
+        a {
+            gap: 5px;
+
+            img {
+                width: 40%;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #aacf50;
+    color: #fff4b9;
+
+    padding: 20px;
+
+    p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        a {
+            img {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+
+        .title {
+            h1 {
+                font-size: 60px;
+            }
+
+            h2 {
+                font-size: 40px;
+            }
+        }
+
+        img {
+            transform: translateY(0%);
+        }
+    }
+
+    .promo {
+        flex-direction: column;
+        text-align: center;
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    nav {
+        flex-direction: column;
+
+        a {
+            margin: 10px 0;
+        }
+    }
+
+    main {
+        a {
+            display: block;
+            flex-direction: column;
+            width: 90%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .two-items-section {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            a {
+                width: 90%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    footer {
+        flex-direction: column;
+
+        p {
+            font-size: 15px;
+        }
+    }
 }
