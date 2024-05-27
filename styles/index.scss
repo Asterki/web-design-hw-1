@@ -132,23 +132,6 @@ main {
     }
 }
 
-footer {
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #aacf50;
-    color: #fff4b9;
-
-    padding: 20px;
-
-    p {
-        font-size: 20px;
-    }
-}
-
 @media screen and (max-width: 1000px) {
     main {
         a {
